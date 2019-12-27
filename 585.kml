@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Placemark><name>Leavy</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283069,34.021608</coordinates></Point>
+</Placemark>
+<Placemark><name>DCC</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.280449,34.021942</coordinates></Point>
+</Placemark>
+<Placemark><name>USChotel</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.281693,34.018978</coordinates></Point>
+</Placemark>
+<Placemark><name>TGF</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284325,34.019104</coordinates></Point>
+</Placemark>
+<Placemark><name>SGM</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.289253,34.021198</coordinates></Point>
+</Placemark>
+<Placemark><name>JMC</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.287750,34.023041</coordinates></Point>
+</Placemark>
+<Placemark><name>HealthCenter</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.288826,34.025223</coordinates></Point>
+</Placemark>
+<Placemark><name>TRADERJOE</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284584,34.025597</coordinates></Point>
+</Placemark>
+<Placemark><name>Vermont</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.291446,34.018410</coordinates></Point>
+</Placemark>
+<Placemark><name>Jefferson</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.290446,34.025327</coordinates></Point>
+</Placemark>
+<Placemark><name>Starbucks</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284187,34.024967</coordinates></Point>
+</Placemark>
+<Placemark><name>Lorenzo</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.272842,34.028404</coordinates></Point>
+</Placemark>
+ <Style id="transBluePoly">
+ <LineStyle>
+ <width>5</width>
+ </LineStyle>
+ <PolyStyle>
+ <color>7dff0000</color>
+ </PolyStyle>
+ </Style> <Placemark>
+ <name>Building 41</name>
+ <styleUrl>#transBluePoly</styleUrl>
+ <Polygon>
+ <extrude>1</extrude>
+ <altitudeMode>relativeToGround</altitudeMode>
+ <outerBoundaryIs>
+ <LinearRing>
+ <coordinates>-118.291446,34.01841 -118.281693,34.018978 -118.272842,34.028404 -118.290446,34.025327 -118.291446,34.01841 </coordinates>
+ </LinearRing>
+ </outerBoundaryIs>
+  <innerBoundaryIs>
+ <LinearRing>
+ <coordinates>-118.291446,34.01841 -118.281693,34.018978 -118.272842,34.028404 -118.290446,34.025327 -118.291446,34.01841 </coordinates>
+ </LinearRing>
+ </innerBoundaryIs>
+</Polygon>
+ </Placemark>
+
+
+
+
+<Placemark id="track2">
+        <LineString>
+            <coordinates>
+-118.280449,34.021942,0
+-118.272842,34.028404,0
+            </coordinates>
+        </LineString>
+    </Placemark>
+<Placemark id="track2">
+        <LineString>
+            <coordinates>
+-118.284187,34.024967,0
+-118.272842,34.028404,0
+            </coordinates>
+        </LineString>
+    </Placemark>
+<Placemark id="track2">
+        <LineString>
+            <coordinates>
+-118.284584,34.025597,0
+-118.272842,34.028404,0
+            </coordinates>
+        </LineString>
+    </Placemark>
+<Placemark id="track2">
+        <LineString>
+            <coordinates>
+-118.283069,34.021608,0
+-118.272842,34.028404,0
+            </coordinates>
+        </LineString>
+    </Placemark>
+
+
+
+</Document></kml>

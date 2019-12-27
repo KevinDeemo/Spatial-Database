@@ -1,0 +1,30 @@
+create table POINTS(
+id int(3) primary key,
+name varchar(100),
+location POINT);
+
+insert into POINTS values(1,'Leavy',ST_GeomFromText('POINT(-118.283069 34.021608)'));
+insert into POINTS values(2,'DCC',ST_GeomFromText('POINT(-118.280449 34.021942)'));
+insert into POINTS values(3,'USChotel',ST_GeomFromText('POINT(-118.281693 34.018978)'));
+insert into POINTS values(4,'TGF',ST_GeomFromText('POINT(-118.284325 34.019104)'));
+insert into POINTS values(5,'SGM',ST_GeomFromText('POINT(-118.289253 34.021198)'));
+insert into POINTS values(6,'JMC',ST_GeomFromText('POINT(-118.287750 34.023041)'));
+insert into POINTS values(7,'HealthCenter',ST_GeomFromText('POINT(-118.288826 34.025223)'));
+insert into POINTS values(8,'TRADERJOE',ST_GeomFromText('POINT(-118.284584 34.025597)'));
+insert into POINTS values(9,'Vermont',ST_GeomFromText('POINT(-118.291446 34.018410)'));
+insert into POINTS values(10,'Jefferson',ST_GeomFromText('POINT(-118.290446 34.025327)'));
+insert into POINTS values(11,'Starbucks',ST_GeomFromText('POINT(-118.284187 34.024967)'));
+insert into POINTS values(12,'Lorenzo',ST_GeomFromText('POINT(-118.272842 34.028404)'));
+
+SET @g = 'MULTIPOINT(-118.283069 34.021608,-118.280449 34.021942,-118.281693 34.018978,-118.284325 34.019104,-118.289253 34.021198,-118.287750 34.023041,-118.288826 34.025223,-118.284584 34.025597,-118.291446 34.018410,-118.290446 34.025327,-118.284187 34.024967,-118.272842 34.028404)';
+
+SELECT ST_AsText(ST_ConvexHull(ST_GeomFromText(@g))); 
+
+set @home =ST_GeomFromText('POINT(-118.272842 34.028404)');
+
+select id, st_x(location),st_y(location),sqrt(pow(abs(st_x(location)-st_x(@home)),2) + pow(abs(st_y(location)-st_y(@home)),2)) as distance from POINTS ORDER BY distance limit 1,4;
+
+
+
+
+
